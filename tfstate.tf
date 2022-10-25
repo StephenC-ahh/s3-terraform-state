@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_s3_bucket" "terraform_state_save_on_s3" {
   bucket = "terraform-state-save-on-s3"
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 }
 
